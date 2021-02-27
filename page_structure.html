@@ -3,53 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <title>Exemple de page d'article</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="page_structure.css">
 </head>
 <body>
     <!-- En-tête qui contiendra le titre du site, le logo (et éventuellement la barre de recherche) -->
-    <header>            
-        <a href=""></a> <!-- image du logo avec surement le titre en photo aussi-->
-        <h1>Titre du site</h1>
-        <!-- La barre de recherche (mais qui peut se mettre aussi dans la barre de navigation) -->
-        <div>
-            <input type="search">
-            <input type="submit">
-        </div>
+    <header>      
+        <div class="logo-div"> 
+            <img class="logo" src="logo.png" alt=""> <!-- image du logo avec surement le titre en photo aussi-->
+        </div>      
+        
         <!-- Barre de navigation -->
         <nav>
             <ul>
-                <li>Element de navigation 1</li>
-                <li>Element de navigation 2</li>
-                <li>Element de navigation 3</li>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
+        <!-- La barre de recherche (mais qui peut se mettre aussi dans la barre de navigation) -->
+        <div class="box-container">
+            <table class="elements-container">
+                <tr>
+                    <td>                        
+                        <input class="search" type="text" placeholder="Rechercher un article">
+                        <div id="autocom-box">
+                            <li><a href="index.html">shirogane</a></li>
+                            <li><a href="#">terrio</a></li>
+                            <li><a href="#">majormilk</a></li>
+                            <li><a href="#">sakurei2015</a></li>
+                            <li><a href="#">leaf</a></li>
+                            <li><a href="#">nenza</a></li>
+                            <li><a href="#">kyoro</a></li>
+                            <li><a href="#">rlcemaster3</a></li>
+                            <li><a href="#">maimai</a></li>
+                            <li><a href="#">qoqoa</a></li>
+                            <li><a href="#">beat shobon</a></li>
+                            <li><a href="#">Doggeh</a></li>
+                            <li><a href="#">FinnOtaku</a></li>
+                            <li><a href="#">Answerdesk</a></li>
+                            <li><a href="#">Fotzu</a></li>
+                            <li><a href="#">Kurumin</a></li>
+                            <li><a href="#">Meta</a></li>
+                            <li><a href="#">Mords</a></li>
+                            <li><a href="#">muno</a></li>
+                            <li><a href="#">sakiz</a></li>
+                            <li><a href="#">salmon</a></li>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#"><span class="material-icons">search</span></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </header>
 
     <!-- Contenu de la page -->
-    <div>
-        <h2>Titre de l'article</h2>
+    <div class="main-content">
         <article>
-            <p>Paragraphe d'introduction à l'article en question</p>
+            <div class="article">
+                <div class="article-title">
+                    <h2 id="article-title">Titre de l'article</h2>
+                </div>
+                <div class="article-content">
+                <img id="image-article" src="rediger-un-article.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>            
 
-            <!-- Sommaire afin de pouvoir sauter directement à la partie de l'article qui nous intéresse -->            
-            <ul>
-                <li><a href="">1ère Sous-titre</a></li>
-                <li><a href="">2ème Sous-titre</a></li>
-            </ul>            
+                <h3>Sous-titre 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                    Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                    
+                    Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                    Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                    
+                    Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                    Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                    
+                    Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                    Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                    
+                    Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.</p>
 
-            <h3>Sous-titre 1</h3>
-            <p>Texte concernant le sous titre 1</p>
-            <p>Texte concernant le sous titre 1</p>
-            <p>Texte concernant le sous titre 1</p>
+                <h3>Sous-titre 2</h3>
+                <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+            </div>
+            <div class="table-contents">
+                <h3>Sommaire</h3>       
+                <ul>
+                    <li><a href="">1ère Sous-titre</a></li>
+                    <li><a href="">2ème Sous-titre</a></li>
+                </ul>
+            </div>
+            
+        </article>        
+        <footer>
+            <div class="footer-left">
+                <img class="logo" src="logo.png" alt="">
+                <p>Nous sommes une branche de l'encyclopédie Bibliotèque universelle dédié aux nouvelles technologies et à leurs aectualités.</p>
+            </div>
+            <ul class="footer-right">
+                <div>
+                    <h3>Nos sources</h3>
 
-            <h3>Sous-titre 2</h3>
-            <p>Texte concernant le sous titre 2</p>
-            <p>Texte concernant le sous titre 2</p>
-            <p>Texte concernant le sous titre 2</p>
+                    <ul class="box">
+                        <li><a href="">Source 1</a></li>
+                        <li><a href="">Source 2</a></li>
+                        <li><a href="">Source 3</a></li>
+                        <li><a href="">Source 4</a></li>
+                        <li><a href="">Source 5</a></li>
+                    </ul>
+                </div>
+                <div class="features">
+                    <h3>Voir aussi</h3>
 
-            <footer>
+                    <ul class="box">
+                        <li><a href="">Autre article 1</a></li>
+                        <li><a href="">Autre article 2</a></li>
+                        <li><a href="">Autre article 3</a></li>
+                        <li><a href="">Autre article 4</a></li>
+                        <li><a href="">Autre article 5</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Liens utiles</h3>
 
-            </footer>
-        </article>
+                    <ul class="box">
+                        <li><a href="">Lien utile 1</a></li>
+                        <li><a href="">Lien utile 2</a></li>
+                        <li><a href="">Lien utile 3</a></li>
+                        <li><a href="">Lien utile 4</a></li>
+                        <li><a href="">Lien utile 5</a></li>
+                    </ul>
+                </div>
+            </ul>
+
+            <div class="footer-bottom">
+                <p>©Texte du footer</p>
+            </div>
+            
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
