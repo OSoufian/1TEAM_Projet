@@ -27,14 +27,45 @@ header{
 }
 
 nav ul{
-    display: flex;
-    padding: 0 25px;
+    padding-right: 10px;
 }
 
 nav a{
     text-decoration: none;
     padding: 0 10px;
     color: white;
+}
+
+.article-list{
+    text-align: left;
+    
+    margin: 0px 0px 0px 35px;
+}
+
+.article-list-no-link{
+    text-align: left;    
+    margin: 0px 0px 0px 35px;
+
+}
+
+.article-list a:link {
+text-decoration: none;
+}
+
+.article-list a:visited {
+text-decoration: none;
+}
+
+.article-list a:hover {
+text-decoration: underline;
+}
+
+.article-list a:active {
+text-decoration: underline;
+}
+
+.article-list li{
+     color: #6BD3FF;
 }
 
 .table-contents{
@@ -56,9 +87,14 @@ nav a{
     font-size: 30px;
 }
 
-.table-contents ul{
-    margin: 0px 0px 0px 35px;
+.title{
+    margin: 0px 0px 0px 20px;
 }
+
+.subtitle{
+    margin: 0px 0px 0px 40px;
+}
+
 
 .table-contents a{
     text-decoration: none;
@@ -117,10 +153,20 @@ article{
     margin: 5px 0px 0px 0px;
 }
 
+.article-content h2{
+    color: #6BD3FF;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
 .article-content h3{
     color: #6BD3FF;
     font-size: 30px;
+    text-align: left;
+    margin-left: 5px;
 }
+
+
 
 .article-content p{
     padding: 5px 5px 10px 5px;
@@ -129,7 +175,7 @@ article{
 
 footer{
     background-color: #6BD3FF;
-    padding: 50px;
+    padding: 25px 40px 20px 30px;
     margin: 5px 0px 0px 0px;
     height: 0%;
     color: white;
@@ -143,8 +189,7 @@ footer > * {
 }
 
 .footer-left{
-    margin-right: 1.25em;
-    margin-bottom: 2em;
+    margin: 15px 40px 2em 20px;
 }
 
 footer ul{
@@ -160,6 +205,7 @@ footer a{
 }
 
 .footer-right{
+    margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -172,10 +218,12 @@ footer a{
 .footer-bottom{
     text-align: center;
     padding-top: 50px;
+    font-size: 10px;
 }
 
 .footer-left p{
     padding-right: 20%;
+    font-size: 15px;
 }
 
 .footer-right > *{
@@ -218,11 +266,25 @@ footer a{
     outline: none;
 }
 
-.material-icons{
+#search-logo{
     height: 100%;
     width: 100%;    
     vertical-align: middle;
     color: #6BD3FF;
+}
+
+.contact{
+    display: flex;
+    font-size: 16px;
+    margin-top: 8px;
+    color:white;
+}
+
+#description{
+    margin: 5px;
+}
+
+.contact span{
 }
 
 #autocom-box{
